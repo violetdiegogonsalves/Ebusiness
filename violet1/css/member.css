@@ -1,0 +1,18 @@
+.member_frm label {
+    width: 6em;
+    float: left;
+    text-align: right;
+    padding-right: 0.5em;
+}
+#reset {
+    margin-left: 1em;
+}
+.error_msg {
+    color: red;
+}
+#pwd_msg, #zip_msg {
+    padding-left: 5px;
+}
+.row{
+    margin-bottom: 0.5em;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABC School- About Us</title>
+<link href="file://///jcub.edu.au/homedirs$/jc487740/lab02/styles.css" rel="stylesheet" type="text/css">
+<script>
+	function nav_item_selected(item_id) {
+		for (i=0; i<4; i++) {
+			document.getElementById(i.toString()).style.backgroundColor="";
+	}
+	document.getElementById(i.toString()).style.backgroundColor="rgba(19,29,108,1.00)";
+	//store item_id in session storage
+	sessionStorage.item_id-item_id;
+	}
+	function run_first() {
+		if (sessionStorage.item_id) {
+			document.getElementById(sessionStorage.item_id.toString()) .style.backgroundColor="rgba(19,29,108,1.00)";
+		}
+		else {
+			document.getElementById("0").style.backgroundColor="rgba(19,29,108,1.00)";
+		}
+	}
+	</script>
+</head>
+<body onLoad="run_first()">
+	<header>
+    	<h1>ABC School</h1>
+    </header>
+	<ul class="top-level-menu" id="top_menu">
+    	<li><a href="file://///jcub.edu.au/homedirs$/jc487740/lab02/index.html" id="0" onCLick="nav_item_selected(0)"> Home</a></li>
+        <li>
+        	<a href="#" id="1" onCLick="nav_item_selected(1)">Courses</a>
+        	<ul class="second-level-menu">
+            	<li><a href="#" onCLick="nav_item_selected(1)">MIT</a></li>
+            	<li><a href="#" onCLick="nav_item_selected(1)">MIT-MBA</a></li>
+        	</ul>
+    	</li>
+    	<li><a href="#" id="2" onCLick="nav_item_selected(2)">IT News</a></li>
+    	<li><a href="file://///jcub.edu.au/homedirs$/jc487740/lab02/about_us.html" id="3" onCLick="nav_item_selected(3)">About Us</a></li>
+	</ul>  
+    <div style="height: 80px; clear: both;">&nbsp;</div>
+    <h1 style="padding-left: 10px;">About Us</h1>
+</body>
+</html>
+
+
+
